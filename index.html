@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Email List</title>
+    <!-- vue js -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <button @click="generateMail()">Genera email</button>
+
+        
+        <div class="mt-10" v-if="load">
+            <img src="./img/load.gif" alt="">
+        </div>
+
+        <ul class="mt-10" v-else>
+            <li v-for="(item) in arrayMail"> {{ item }}</li>
+        </ul>
+    </div>
+
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <!-- custom script -->
+    <script src="./js/script.js"></script>
+</body>
+</html>

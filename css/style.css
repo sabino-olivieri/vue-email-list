@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 20px auto;
+    width: 70%;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: bisque;
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+img {
+    max-width: 100px;
+}
+
+ul {
+    padding-inline-start: 0px;
+    list-style: none;
+}
+
+li {
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
